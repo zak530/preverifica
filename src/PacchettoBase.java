@@ -5,6 +5,7 @@ public class PacchettoBase {
     private Date andata;
     private Date ritorno;
     private float costobase = 50;
+    private int npersone;
 
 
     public PacchettoBase(){
@@ -14,11 +15,17 @@ public class PacchettoBase {
     }
 
 
+
     public String getDescrizione() {
         return descrizione;
     }
 
     public void setDescrizione(String descrizione) {
         this.descrizione = descrizione;
+    }
+
+    @Override
+    public String toString() {
+        return "pacchetto base [ descrizione: "+ descrizione+" data di andata: "+andata+ " data di ritorno: "+ritorno+" costo"
     }
 }
