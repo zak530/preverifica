@@ -4,6 +4,12 @@ public class PacchettoLavoro extends PacchettoBase{
     private int prezzolavoratorefinale;
     private int percentuale;
 
+
+    public PacchettoLavoro(){
+        this.npasti=npasti;
+    }
+
+
     public int getNpasti() {
         return npasti;
     }
@@ -21,7 +27,7 @@ public class PacchettoLavoro extends PacchettoBase{
             percentuale+=15;
 
 
-            prezzolavoratorefinale= (costobase*percentuale)/100
+            prezzolavoratorefinale= (costobase*percentuale)/100;
 
 
         }

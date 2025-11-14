@@ -68,7 +68,7 @@ public class PacchettoBase {
         return "pacchetto base [ descrizione: "+ descrizione+" ,data di andata: "+andata+ " ,data di ritorno: "+ritorno+" ,prezzo finale: "+ prezzofinale()+" ,numero di passeggeri: "+npersone+"]";
     }
 
-    public LocalDate LocalDate(int i, int i1, int i2) {
-        return null;
-    }
+
+
+
 }

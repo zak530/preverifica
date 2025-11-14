@@ -8,7 +8,9 @@ public class Main{
         PacchettoBase egitto = new PacchettoBase();
         egitto.setDescrizione("vogliamo andare in egitto");
         egitto.setNpersone(10);
-        //LocalDate egitto = egitto.LocalDate(2025, 06, 23);
+
+        egitto.setAndata(2_000,3,3);
+
         System.out.println(egitto);
 
 
@@ -18,6 +20,13 @@ public class Main{
         italia.setNminori(3);
         italia.setDescrizione("vogliamo andare in italia");
         System.out.println(italia);
+
+
+
+        PacchettoLavoro olanda = new PacchettoLavoro();
+        olanda.setNpasti(2);
+        olanda.setDescrizione("vado in olanda per lavoro");
+        System.out.println(olanda);
 
 
 
