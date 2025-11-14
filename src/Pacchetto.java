@@ -6,4 +6,12 @@ public Pacchetto(){
 
 }
 
+//
+
+
+
+
+
+//tostring
+
 }

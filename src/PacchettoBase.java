@@ -1,16 +1,36 @@
+import java.time.LocalDate;
 import java.util.Date;
 
 public class PacchettoBase {
     private String descrizione;
-    private Date andata;
-    private Date ritorno;
-    private float costobase = 50;
+    private LocalDate andata;
+    private LocalDate ritorno;
+    protected int costobase = 50;
     private int npersone;
+    private int prezzofinale;
 
 
     public PacchettoBase(){
         this.descrizione=descrizione;
         this.andata=andata;
+        this.ritorno = ritorno;
+    }
+
+
+    public LocalDate getAndata() {
+        return andata;
+    }
+
+    public LocalDate getRitorno() {
+        return ritorno;
+    }
+
+    public void setAndata(LocalDate andata) {
+        this.andata = andata;
+    }
+
+
+    public void setRitorno(LocalDate ritorno) {
         this.ritorno = ritorno;
     }
 
@@ -32,8 +52,23 @@ public class PacchettoBase {
         this.npersone = npersone;
     }
 
+    LocalDate data = LocalDate.of(2022, 11, 23);
+
+
+    //metodo che calcola il costo complessivo
+    public int prezzofinale(){
+        prezzofinale = 50*npersone;
+        return prezzofinale;
+    }
+
+
+
     @Override
     public String toString() {
-        return "pacchetto base [ descrizione: "+ descrizione+" ,data di andata: "+andata+ " ,data di ritorno: "+ritorno+" ,costo base per persona: "+ costobase+" ,numero di passeggeri: "+npersone
+        return "pacchetto base [ descrizione: "+ descrizione+" ,data di andata: "+andata+ " ,data di ritorno: "+ritorno+" ,prezzo finale: "+ prezzofinale()+" ,numero di passeggeri: "+npersone+"]";
+    }
+
+    public LocalDate LocalDate(int i, int i1, int i2) {
+        return null;
     }
 }
