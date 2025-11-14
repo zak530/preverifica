@@ -4,7 +4,7 @@ public class PacchettoBase {
     private String descrizione;
     private Date andata;
     private Date ritorno;
-    private int costobase = 50;
+    private float costobase = 50;
 
 
     public PacchettoBase(){
@@ -14,8 +14,11 @@ public class PacchettoBase {
     }
 
 
+    public String getDescrizione() {
+        return descrizione;
+    }
 
-
-
-
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
+    }
 }
