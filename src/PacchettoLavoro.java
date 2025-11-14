@@ -29,7 +29,9 @@ public class PacchettoLavoro extends PacchettoBase{
 
     }
 
-
+    public String toString() {
+        return "pacchetto lavoratore [ descrizione: "+ getDescrizione()+" ,data di andata: "+getAndata()+ " ,data di ritorno: "+getRitorno()+" ,prezzo finale: "+ prezzolavoratore()+ " percentuale di sconto: "+percentuale+"  ,di cui pasti: "+ npasti+"]";
+    }
 
 
 }
