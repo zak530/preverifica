@@ -24,8 +24,16 @@ public class PacchettoBase {
         this.descrizione = descrizione;
     }
 
+    public int getNpersone() {
+        return npersone;
+    }
+
+    public void setNpersone(int npersone) {
+        this.npersone = npersone;
+    }
+
     @Override
     public String toString() {
-        return "pacchetto base [ descrizione: "+ descrizione+" data di andata: "+andata+ " data di ritorno: "+ritorno+" costo"
+        return "pacchetto base [ descrizione: "+ descrizione+" ,data di andata: "+andata+ " ,data di ritorno: "+ritorno+" ,costo base per persona: "+ costobase+" ,numero di passeggeri: "+npersone
     }
 }
